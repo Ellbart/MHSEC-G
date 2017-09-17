@@ -29,7 +29,7 @@ namespace MHSEC_G
             get { return Helper.byte_to_uint16_le(_data, _obj_offset + Offsets.OFFSETR_ITEM_COUNT); }
             set
             {
-                if (value <= 999)
+                if (value <= 500)
                 {
                     Helper.write_uint16_le(_data, _obj_offset + Offsets.OFFSETR_ITEM_COUNT, value);
                 }
